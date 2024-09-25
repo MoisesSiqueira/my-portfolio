@@ -1,41 +1,27 @@
-<<<<<<< HEAD
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.scss";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Moisés Siqueira",
-  description: "Moisés Siqueira Engenheiro de Software",
-=======
-import "./globals.scss";
-import { Poppins } from "next/font/google";
+import type { Metadata } from "next"; // Mantenha a importação de Metadata
+import { Poppins } from "next/font/google"; // Use Poppins como a fonte
+import "./globals.scss"; // Importa o arquivo de estilos globais
 
 const inter = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
 });
 
-export const metadata = {
+// Defina o metadata
+export const metadata: Metadata = {
   title: "Moisés Siqueira",
-  description: "Moisés Siqueira is a software engineer...",
->>>>>>> a7b8ff2 (Primeiro commit)
+  description: "Moisés Siqueira Engenheiro de Software",
 };
 
 export default function RootLayout({
   children,
-<<<<<<< HEAD
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-=======
 }: {
   children: React.ReactNode;
 }) {
->>>>>>> a7b8ff2 (Primeiro commit)
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      {" "}
+      {/* Mudei para 'pt-BR' conforme o idioma desejado */}
       <body className={inter.className}>{children}</body>
     </html>
   );
