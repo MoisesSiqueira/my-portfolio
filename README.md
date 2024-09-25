@@ -10,8 +10,11 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+<<<<<<< HEAD
 # or
 bun dev
+=======
+>>>>>>> a7b8ff2 (Primeiro commit)
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

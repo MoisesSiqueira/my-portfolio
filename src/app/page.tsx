@@ -1,4 +1,5 @@
 import Image from "next/image";
+<<<<<<< HEAD
 
 export default function Home() {
   return (
@@ -10,6 +11,29 @@ export default function Home() {
         height={24}
         priority
       />
+=======
+import { Experience } from "./components/experience/experience";
+import { Header } from "./components/header/header";
+import { Info } from "./components/information/information";
+
+import "./styles/home.scss";
+import { EmailIcon } from "./components/icons/email-icon";
+import { SocialBtns } from "./components/social-btns/social-btns";
+
+export default function Home() {
+  return (
+    <main className="container">
+      <Header />
+      <Experience />
+      <Info />
+      <div className="buttons">
+        <SocialBtns />
+        <a className="btn-primary" href="msc.helena182@gmail.com">
+          contact me
+          <EmailIcon />
+        </a>
+      </div>
+>>>>>>> a7b8ff2 (Primeiro commit)
     </main>
   );
 }
